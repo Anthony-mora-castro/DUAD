@@ -1,0 +1,23 @@
+Buscar el dispositivo donde vamos a ver el video
+
+Acceder a YouTube:
+
+1. si es en telefono movil:
+
+    1.1 abrir la app movil de YouTube
+
+2. si es en Pc o tablet o SmartTv
+    2.1 abrir la pagina de Youtube
+
+Buscar el Video:
+
+3. Busca el video de tu interes en el menu principal, o con la bara de busqueda 
+
+4. Seleccionar el Video:
+
+    4.1 Una ves selccionado el video le das un click para entrar
+
+5 Reproducir el Video:
+    5.1Una vez que estés en el video seleccionado le da al boton de play
+
+#fin

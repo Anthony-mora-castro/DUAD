@@ -1,0 +1,16 @@
+definir numero
+definir suma
+definir contador 
+
+suma = 0
+contador = 1 
+mostrar "Ingrese el numero al que desea llegar"
+pedir numero 
+mientras que (contador <= numero) hacer:
+    suma = suma + contador
+    contador = contador + 1
+finmientras
+mostrar "La suma de los números desde 1 hasta", numero, "es:", suma
+
+fin
+#.

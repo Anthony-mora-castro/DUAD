@@ -1,0 +1,20 @@
+inicio 
+
+definir tiempo_en_segundos
+definir 10_minutos 
+definir diferencia 
+mostrar "Ingrese el tiempo en segundos"
+pedir tiempo_en_segundos
+10_minutos = 600
+
+
+si (tiempo_en_segundos >= 10_minutos ) entonces
+	 mostrar tiempo_en_segundos, "Mayor"
+sino 
+	si (tiempo_en_segundos < 10_minutos) entonces
+		diferencia = 10_minutos - tiempo_en_segundos
+		mostrar tiempo_en_segundos, "faltan", diferencia, "para llegar a 10 minutos"
+finsi
+
+fin
+#.

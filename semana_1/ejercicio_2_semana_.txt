@@ -1,0 +1,45 @@
+inicio 
+
+depsierto a las 6:30 am
+
+voy a dejar mi sobrino al kinder a las 7:00 am
+
+me doy un baño
+
+desayuno
+
+si tengo clases en la U
+
+si el carro tiene gasolina
+
+    voy a clases en el carro 
+
+sino
+
+    voy a clase en bus
+
+sino
+
+    me quedo en la casa
+
+si tengo pendientes
+
+    completo mis pendientes
+
+sino
+
+    tengo el dia libre
+
+recojo a mi sobrino del kinder
+
+hago mi almuerzo
+
+hago oficio en la casa
+
+descanso
+
+hago la cena
+
+me acuesto a dormir
+
+# fin
