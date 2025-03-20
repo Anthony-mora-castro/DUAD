@@ -1,11 +1,11 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 import math
 class Shape(ABC):
-    @abstractclassmethod
+    @abstractmethod
     def calculate_perimeter(self):
         pass
 
-    @abstractclassmethod
+    @abstractmethod
     def calculate_area(self):
         pass
 
@@ -36,13 +36,13 @@ class Rectangle(Shape):
     
     def __init__(self,length, width):
         self.length = length
-        self.widt = width
+        self.width = width
 
     def calculate_perimeter(self):
-        return (self.length + self.widt) * 2
+        return (self.length + self.width) * 2
     
     def calculate_area(self):
-        return self.length * self.widt
+        return self.length * self.width
 
 
 circle = Circle(radius = 5)

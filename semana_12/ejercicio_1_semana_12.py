@@ -1,44 +1,46 @@
 class BankAccount:
     def __init__(self, balance=0):
-        self.balance = balance  
+        self.balance = balance
 
-    def _deposit(self, amount):
+    def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print(f'You made a deposit of {amount}, your new balance is {self.balance}')
+            print(f"Deposited {amount} units. Current balance: {self.balance}")
         else:
-            print(f'The amount has to be more than 0')
+            print("The deposit amount must be greater than 0.")
 
-    def _withdraw(self, amount):
+    def withdraw(self, amount):
         if amount > 0 and amount <= self.balance:
             self.balance -= amount
-            print(f'You made a withdraw of {amount}, your new balance is {self.balance}')
+            print(f"Withdrew {amount} units. Current balance: {self.balance}")
         else:
-            print(f'Insufficient funds or invalid amount')
+            print("Insufficient funds or invalid amount.")
 
 
 class SavingsAccount(BankAccount):
-    def __init__(self, balance, min_balance=100):
-        self.balance = balance
+    def __init__(self, balance=0, min_balance=0):
+        super().__init__(balance)
         self.min_balance = min_balance
 
-    def _withdraw(self, amount):
+    def withdraw(self, amount):
         if self.balance - amount < self.min_balance:
-            raise ValueError(f'You cannot withdraw that amount because of the minimum allowed balance')
+            raise ValueError(f"Cannot withdraw {amount} units. The minimum allowed balance is {self.min_balance}.")
         else:
-            BankAccount._withdraw(self, amount)
+            super().withdraw(amount)
 
 
-my_account = BankAccount(balance=0)
-
-my_account._deposit(100) 
-
-my_account._withdraw(50)  
-
-savings_account = SavingsAccount(balance=200, min_balance=100)
-
-
+# Example usage
 try:
-    savings_account._withdraw(25)  
+    # Create a savings account with an initial balance of 1000 and a minimum balance of 500
+    savings_account = SavingsAccount(balance=1000, min_balance=500)
+
+    # Deposit money
+    savings_account.deposit(300)  # Current balance: 1300
+
+    # Withdraw money (success)
+    savings_account.withdraw(200)  # Current balance: 1100
+
+    # Attempt to withdraw more than allowed (error)
+    savings_account.withdraw(700)  # This will raise an error
 except ValueError as e:
     print(e)

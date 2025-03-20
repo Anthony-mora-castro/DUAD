@@ -22,7 +22,7 @@ class Aquatic:
 
 class AmphibiousVehicle(Terrestrial, Aquatic):
     def __init__(self, name):
-        self.name = name
+        super().__init__(name)
 
     def drive(self):
         Terrestrial.drive(self)
