@@ -29,17 +29,16 @@ class Stack:
             current = current.next
         print(f"Stack: {'<vacío>' if result == '' else result}")
 
-# ✅ Uso correcto: Crear una instancia primero
 mi_stack = Stack()
 
-mi_stack.push(3)  # head → Node(3) → None
-mi_stack.push(5)  # head → Node(5) → Node(3) → None
-mi_stack.push(7)  # head → Node(7) → Node(5) → Node(3) → None
+mi_stack.push(3)  
+mi_stack.push(5)  
+mi_stack.push(7)  
 
-mi_stack.print_stack()  # Stack: 7 -> 5 -> 3
+mi_stack.print_stack()  
 
 mi_stack.pop()
 mi_stack.pop()
 mi_stack.pop()
 
-mi_stack.print_stack()  # Stack: 7 -> 5 -> 3
+mi_stack.print_stack()  

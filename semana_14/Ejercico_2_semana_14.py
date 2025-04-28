@@ -94,13 +94,13 @@ my_deque.add_to_rear(10)
 my_deque.add_to_front(5)
 my_deque.add_to_rear(20)
 
-my_deque.print_deque()  # Deque: 5 ↔ 10 ↔ 20
+my_deque.print_deque()  
 
 front_value = my_deque.remove_from_front()
-print(f"Removed from front: {front_value}")  # 5
+print(f"Removed from front: {front_value}")  
 
 rear_value = my_deque.remove_from_rear()
-print(f"Removed from rear: {rear_value}")  # 20
+print(f"Removed from rear: {rear_value}")  
 
-my_deque.print_deque()  # Deque: 10
-print(f"Current size: {my_deque.get_size()}")  # 1
+my_deque.print_deque() 
+print(f"Current size: {my_deque.get_size()}")  
