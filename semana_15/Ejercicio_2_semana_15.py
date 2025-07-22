@@ -5,7 +5,7 @@ def bubble_sort(list_to_sort):
             current_element = list_to_sort[index]  # O(1)
             next_element = list_to_sort[index + 1]  # O(1)
             print(f'Iteracion:{outer_index}.{index}.  Elemento actual: {current_element}. Elemento siguiente: {next_element}')  # O(1)
-            if current_element < next_element:  # O(1)
+            if current_element > next_element:  # O(1)
                 print('El elemento anterior es menor al siguiente, intercambiadolos...')  # O(1)
                 list_to_sort[index] = next_element  # O(1)
                 list_to_sort[index + 1] = current_element  # O(1)
